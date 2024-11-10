@@ -1,0 +1,231 @@
+/* Reset styling dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Menambahkan box-sizing agar padding dan border tidak mempengaruhi ukuran elemen */
+    text-decoration: none; /* Menghapus teks underline */
+}
+
+/* Global body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/night-landscape-with-lake-mountains-trees-coast-vector-cartoon-illustration-nature-scene-with-coniferous-forest-river-shore-rocks-moon-stars-dark-sky_107791-8253.jpg?t=st=1731125671~exp=1731129271~hmac=4ec73bf1da4e5ff33b1a4b4c60ba704aaa6b2760da6c46b32cb83e55f1cad8fa&w=996');
+    background-size: cover; /* Memastikan gambar mengisi seluruh background */
+    background-position: center center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Agar background tetap statis saat halaman digulir */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+    color: #f4f4f4; /* Mengatur warna teks menjadi terang agar kontras dengan latar belakang */
+}
+
+/* Wrapper untuk konten utama */
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    z-index: 10; /* Agar konten tetap berada di atas background */
+}
+
+/* Styling untuk logo */
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Courier', monospace;
+    color: #AA96DA; /* Warna ungu pastel untuk logo */
+    display: inline-block; /* Agar logo tidak terpengaruh oleh float */
+}
+
+/* Styling untuk menu navigasi */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Memastikan logo dan menu terpisah dengan ruang */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan gelap untuk menu */
+    padding: 10px 20px; /* Menambah padding agar menu lebih rapih */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Menambahkan shadow untuk efek */
+    z-index: 1000; /* Agar menu tetap di atas konten lainnya */
+}
+
+/* Styling untuk list di menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling untuk link menu */
+nav ul li {
+    margin: 0 10px; /* Memberikan jarak antar item */
+}
+
+nav ul li a {
+    color: white; /* Menjadikan teks menu putih agar lebih terlihat jelas */
+    font-weight: bold;
+    padding: 8px 16px;
+    text-align: center;
+    display: block; /* Agar link bisa mengambil seluruh area klik */
+    transition: background-color 0.3s ease; /* Menambahkan efek transisi */
+}
+
+/* Hover effect untuk menu */
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.3); /* Efek hover dengan perubahan background */
+}
+
+/* Styling untuk section umum */
+section {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+/* Styling untuk kolom konten */
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Background gelap semi-transparan untuk kolom konten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efek bayangan pada kolom */
+    border-radius: 10px; /* Rounded corners untuk kolom */
+}
+
+/* Styling untuk deskripsi di kolom */
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #AA96DA;
+}
+
+/* Styling untuk judul */
+h2 {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #f4f4f4; /* Menjadikan warna judul putih agar kontras dengan background */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Memberikan efek bayangan untuk membuat teks lebih jelas */
+    width: 100%;
+    line-height: 50px;
+}
+
+/* Styling untuk tombol (button) */
+a.tbl-biru,
+a.tbl-ungu {
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block; /* Agar tombol berbentuk blok dengan padding */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi */
+}
+
+/* Tombol biru */
+a.tbl-biru {
+    background: #6A1E55;
+}
+
+a.tbl-biru:hover {
+    background: #000B58;
+    transform: translateY(-2px); /* Efek tombol naik saat di hover */
+}
+
+/* Tombol ungu */
+a.tbl-ungu {
+    background: #000B58;
+}
+
+a.tbl-ungu:hover {
+    background: #6A1E55;
+    transform: translateY(-2px); /* Efek tombol naik saat di hover */
+}
+
+/* Styling untuk paragraf */
+p {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.6; /* Memberikan jarak antar baris */
+    color: #f4f4f4; /* Menjadikan teks paragraf putih agar lebih jelas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Menambahkan bayangan halus pada teks paragraf */
+}
+
+/* Styling untuk form Sign Up/Login */
+#Sign\ up\/login {
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Efek bayangan pada form */
+    max-width: 600px; /* Maksimal lebar form */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling untuk input form */
+#Sign\ up\/login input[type="text"],
+#Sign\ up\/login input[type="password"],
+#Sign\ up\/login input[type="submit"] {
+    width: 100%; /* Lebar penuh untuk input form */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2); /* Tambahkan sedikit transparansi pada input */
+    color: #f4f4f4; /* Warna teks input */
+}
+
+/* Styling untuk label input form */
+#Sign\ up\/login label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #f4f4f4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Tombol submit untuk form */
+#Sign\ up\/login input[type="submit"] {
+    background-color: #6A1E55;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Menambahkan jarak antara tombol dan input */
+}
+
+#Sign\ up\/login input[type="submit"]:hover {
+    background-color: #000B58;
+}
+
+/* Responsif untuk form pada layar kecil */
+@media (max-width: 768px) {
+    #Sign\ up\/login {
+        padding: 20px;
+        max-width: 90%; /* Lebar form 90% pada layar kecil */
+    }
+
+    #Sign\ up\/login input[type="submit"] {
+        padding: 12px;
+    }
+
+    nav {
+        flex-direction: column; /* Menu vertikal pada layar kecil */
+        align-items: center; /* Menjaga menu tetap terpusat */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Memberikan jarak vertikal antar item menu */
+    }
+
+    nav ul li a {
+        padding: 12px 20px; /* Menambah padding untuk
